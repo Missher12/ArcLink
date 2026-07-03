@@ -1,20 +1,16 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# ArcLink Remote 🖥️
 
-# Run and deploy your AI Studio app
+This repository contains two parts:
 
-This contains everything you need to run your app locally.
+1. `arclink-remote/` - **Native Rust Product (正式原生产品)**
+   * This is the core product, organized as a Cargo Workspace containing `arclink-common`, `arclink-host`, `arclink-viewer`, `arclink-protocol-test`, and comprehensive `docs/`.
+   * It implements the true remote desktop transport, input control injection, low-latency screen capture, and performance diagnostics.
+   * **Note:** All actual production development, testing, and deployment must focus strictly on this directory.
 
-View your app in AI Studio: https://ai.studio/apps/c3b39cc0-680c-4c1d-8ecd-194b38ffc8c9
+2. Repository Root (Web Interface) - **Web Playground / UI Prototype (演示/原型层)**
+   * This consists of the root `src/`, `server.ts`, and `package.json`.
+   * It serves strictly as an interactive web-based playground and high-fidelity prototype to demonstrate the UI flow and layout.
+   * **Note:** The web-based system **cannot** be used as the basis for actual low-latency remote desktop transmission, input injection, native screen capture, or hardware-accelerated encoding.
 
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+For detailed compilation and run instructions of the native Rust product, please see:
+[**`arclink-remote/README.md`**](./arclink-remote/README.md)
