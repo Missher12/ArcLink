@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    "crates/arclink-common",
+    "crates/arclink-host",
+    "crates/arclink-viewer",
+    "crates/arclink-protocol-test",
+]
+resolver = "2"

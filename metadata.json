@@ -1,0 +1,6 @@
+{
+  "name": "ArcLink Remote",
+  "description": "A high-performance Windows remote control MVP featuring ArcLink Host (be controlled) and ArcLink Viewer (control end) side-by-side with real network connections and simulated Win11 desktops.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
